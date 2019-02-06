@@ -15,7 +15,6 @@ namespace AnimalShelter
         public string Address;
         public string Description;
 
-
         public Customer(string firstName, string lastName, DateTime birthday)
         {
             this.FirstName = firstName;
@@ -23,7 +22,6 @@ namespace AnimalShelter
             this._Birthday = birthday;
 
             this._IsQualified = DateTime.Now.Year - Age >= 18;
-
         }
 
         public DateTime Birthday
@@ -32,15 +30,14 @@ namespace AnimalShelter
             set
             {
                 _Birthday = value;
-                _IsQualified = DateTime.Now.Year - Age >= 18;
+                _IsQualified = Age >= 18;
             }
         }
 
         public int Age
         {
-            get { return DateTime.Now.Year - Age; }
+            get { return DateTime.Now.Year - _Birthday.Year; }
         }
-
         public bool IsQualified
         {
             get { return _IsQualified; }
@@ -50,5 +47,6 @@ namespace AnimalShelter
         {
             get { return FirstName + " " + LastName; }
         }
+        
     }
 }
