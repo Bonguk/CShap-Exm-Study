@@ -1,8 +1,8 @@
 1. HelloCSharpWin
- - Ã¹ C# WinFormÀ¸·Î °è»ê±â ¸¸µé¾î º¸±â
+ - ì²« C# WinFormìœ¼ë¡œ ê³„ì‚°ê¸° ë§Œë“¤ì–´ ë³´ê¸°
 
 2. CuteCat
- - Å¬·¡½º, »ý¼ºÀÚ, Á¢±ÙÁ¦¾îÀÚÀÇ ÀÌÇØ¸¦ µ½±â À§ÇØ °£´ÜÇÑ ¿¹Á¦
+ - í´ëž˜ìŠ¤, ìƒì„±ìž, ì ‘ê·¼ì œì–´ìžì˜ ì´í•´ë¥¼ ë•ê¸° ìœ„í•´ ê°„ë‹¨í•œ ì˜ˆì œ
 
 3. AnimalShelter
- - Å¬·¡½º È°¿ë, ¼Ó¼º, Date Time
+ - í´ëž˜ìŠ¤ í™œìš©, ì†ì„±, Date Timeì„ ì‚¬ìš©í•´ ìž…ì–‘ìž ì •ë³´ ì¶œë ¥í•œ ì˜ˆì œ
