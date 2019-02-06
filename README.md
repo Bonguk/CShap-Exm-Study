@@ -1,2 +1,8 @@
-# CShap-Exm-Study
-ì˜ˆì œë¡œ ë°°ìš°ëŠ” C#
+1. HelloCSharpWin
+ - Ã¹ C# WinFormÀ¸·Î °è»ê±â ¸¸µé¾î º¸±â
+
+2. CuteCat
+ - Å¬·¡½º, »ı¼ºÀÚ, Á¢±ÙÁ¦¾îÀÚÀÇ ÀÌÇØ¸¦ µ½±â À§ÇØ °£´ÜÇÑ ¿¹Á¦
+
+3. AnimalShelter
+ - Å¬·¡½º È°¿ë, ¼Ó¼º, Date Time
