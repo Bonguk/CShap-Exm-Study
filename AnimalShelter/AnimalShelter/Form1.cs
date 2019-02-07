@@ -42,6 +42,29 @@ namespace AnimalShelter
             CusAddress.Text = cus.Address;
             CusDescription.Text = cus.Description;
             CusIsQualified.Text = cus.IsQualified.ToString();
+
+
+            CusPetInfo.Text = "";
+            // Environment 해당 OS마다 다른 값을 제공 해줌
+            // ( 예를 들어 줄바꿈 Windows: \r\n, Linux: \n으로 표현됨 )
+            foreach (Pet pet in cus.MyPets)
+            {
+                CusPetInfo.Text += pet.Name + ":" + pet.MakeSound();
+                // Is연산자는 부모클래스가 자식클래스 타입이면 ture고 아니면 false으로 나뉜고, bool 형태이다.
+                // As연산자는 부모클래스에서 자식클래스로 치환 할때 사용한다.
+                if (pet is Cat)
+                {
+                    CusPetInfo.Text += ":" + (pet as Cat).Scratch();
+                }
+                else if (pet is Dog)
+                {
+                    CusPetInfo.Text += ":" + (pet as Dog).Bite();
+                }
+
+                CusPetInfo.Text += Environment.NewLine;
+
+            }
+
         }
 
 
@@ -66,6 +89,18 @@ namespace AnimalShelter
             CusListPanel.Dock = DockStyle.Fill;
             CusDetailPanel.Dock = DockStyle.Right;
             CusNewPanel.Hide();
+
+            Customer cus = new Customer("Ian", "Na", new DateTime(2000, 1, 2));
+            Cat cat = new Cat(1, "NaCho", "White", "Male");
+            cus.Adopt(cat);
+            Cat cat2 = new Cat(3, "Ruby", "Brown", "female");
+            cus.Adopt(cat2);
+
+            Dog dog = new Dog(2, "Happy", "White", "Male", DogBreed.Jindo);
+            cus.Adopt(dog);
+
+            Customers.Add(cus);
+            CusList.Rows.Add(cus.FirstName, cus.Age, cus.IsQualified);
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
